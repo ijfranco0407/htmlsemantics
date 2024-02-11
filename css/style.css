@@ -5,5 +5,13 @@ body {
     border: 3px solid midnightblue;
     line-height: 1.5;
     background: palegoldenrod;
-    color: rgb(20, 20, 20);
+    color: rgb(10, 10, 10);
+}
+h1 {
+    border: 2px solid red;
+    width: 40%;
+}
+
+p{
+    color: midnightblue;
 }
