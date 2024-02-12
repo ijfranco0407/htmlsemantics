@@ -10,10 +10,13 @@ body, h1, h2, h3, p, ul, li, figure {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #050505; /* Light gray */
-    color: #090909; /* Dark gray */
+    background-color: #050505; /* Dark gray */
+    color: #fff; /* White */
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    min-height: 100vh;
 }
 
 /* Header styles */
@@ -52,13 +55,16 @@ nav ul li a:hover {
 
 /* Main content styles */
 main {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
 }
 
 article {
-    background-color: #716d6d;
+    background-color: #716d6d; /* Medium gray */
     border-radius: 10px;
     padding: 20px;
+    margin-top: 20px;
 }
 
 h2 {
@@ -80,28 +86,18 @@ figcaption {
 
 /* Footer styles */
 footer {
-    background-color: #6a6969; /* Dark gray */
+    background-color: #333; /* Dark gray */
     color: #ffd700; /* Gold */
     padding: 20px;
     text-align: center;
 }
 
-/* Responsive design using media queries */
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-    nav ul {
-        display: block;
-        text-align: center;
-    }
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+/* Navigation and Footer */
+nav {
+    float: left;
+    width: 100%;
 }
 
-p, ul, li,{
-
-    color: aliceblue;
+footer {
+    clear: both;
 }
