@@ -1,17 +1,140 @@
+/* style.css */
 
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul, li, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up basic styles */
 body {
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 3px solid midnightblue;
-    line-height: 1.5;
-    background: palegoldenrod;
-    color: rgb(10, 10, 10);
-}
-h1 {
-    border: 2px solid red;
-    width: 40%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: royalblue; /* Royal blue */
+    color: #333;
 }
 
-p{
-    color: midnightblue;
+/* Header styles */
+header {
+    background-color: midnightblue; /* Midnight blue */
+    color: gold; /* Gold */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: gold; /* Gold */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #191970; /* Darker blue */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: midnightblue; /* Midnight blue */
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+h3 {
+    color: #191970; /* Darker blue */
+    font-size: 1.5em;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* Footer styles */
+footer {
+    background-color: midnightblue; /* Midnight blue */
+    color: gold; /* Gold */
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+/* Responsive design using flexbox */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    flex: 1;
+}
+
+/* Responsive design using grid */
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+}
+
+/* Responsive design using floats */
+nav ul li {
+    float: none;
+    display: inline-block;
+}
+
+/* Responsive design using position */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: midnightblue; /* Midnight blue */
+    width: 100%;
+}
+
+nav ul {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+/* Responsive design using media queries */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
