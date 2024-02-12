@@ -10,21 +10,23 @@ body, h1, h2, h3, p, ul, li, figure {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: royalblue; /* Royal blue */
-    color: #333;
+    background-color: #050505; /* Light gray */
+    color: #090909; /* Dark gray */
+    margin: 0;
+    padding: 0;
 }
 
 /* Header styles */
 header {
-    background-color: midnightblue; /* Midnight blue */
-    color: gold; /* Gold */
+    background-color: #333; /* Dark gray */
+    color: #ffd700; /* Gold */
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    margin-bottom: 10px;
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -37,14 +39,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: gold; /* Gold */
+    color: #ffd700; /* Gold */
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #191970; /* Darker blue */
+    background-color: hsl(0, 0%, 5%); /* Dark gray */
 }
 
 /* Main content styles */
@@ -53,75 +56,34 @@ main {
 }
 
 article {
-    margin-bottom: 40px;
-    background-color: #fff;
+    background-color: #716d6d;
     border-radius: 10px;
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
 h2 {
-    color: midnightblue; /* Midnight blue */
+    font-size: 1.8em;
+    color: #090505; /* Dark gray */
     margin-bottom: 10px;
-    font-size: 2em;
 }
 
 h3 {
-    color: #191970; /* Darker blue */
-    font-size: 1.5em;
+    font-size: 1.4em;
+    color: #0d0c0c; /* Medium gray */
+    margin-bottom: 10px;
 }
 
 figcaption {
     font-style: italic;
+    color: #060606; /* Light gray */
 }
 
 /* Footer styles */
 footer {
-    background-color: midnightblue; /* Midnight blue */
-    color: gold; /* Gold */
+    background-color: #6a6969; /* Dark gray */
+    color: #ffd700; /* Gold */
     padding: 20px;
     text-align: center;
-    clear: both;
-}
-
-/* Responsive design using flexbox */
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-article {
-    flex: 1;
-}
-
-/* Responsive design using grid */
-nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    justify-items: center;
-}
-
-/* Responsive design using floats */
-nav ul li {
-    float: none;
-    display: inline-block;
-}
-
-/* Responsive design using position */
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: midnightblue; /* Midnight blue */
-    width: 100%;
-}
-
-nav ul {
-    margin: 0 auto;
-    width: fit-content;
 }
 
 /* Responsive design using media queries */
@@ -137,4 +99,9 @@ nav ul {
         display: block;
         margin: 10px 0;
     }
+}
+
+p, ul, li,{
+
+    color: aliceblue;
 }
